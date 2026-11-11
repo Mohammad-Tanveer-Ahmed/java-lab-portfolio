@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Java Lab | Weekly Tasks</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="nav">
+        <div class="logo">TA</div>
+
+        <div class="links">
+            <a href="index.html">01. HOME</a>
+            <a href="weeks.html">02. WEEKS</a>
+        </div>
+
+        <a class="hello" href="index.html">BACK HOME</a>
+    </nav>
+
+
+    <!-- WEEKLY TASKS PAGE -->
+    <section class="section" id="weeks" style="padding-top:150px;">
+
+        <div class="section-head">
+            <small>MY JAVA LAB JOURNEY</small>
+
+            <h2>Weekly Tasks</h2>
+
+            <p>
+                Explore my Java Laboratory work week by week.
+            </p>
+        </div>
+
+
+        <!-- WEEK CARDS -->
+        <div class="cards">
+
+            <!-- WEEK 01 -->
+            <article class="card active">
+
+                <div class="week">WEEK</div>
+
+                <div class="num">01</div>
+
+                <h3>Java Fundamentals</h3>
+
+                <p>
+                    Introduction to Java, basic programs,
+                    input-output, data types and operators.
+                </p>
+
+                <button
+                    class="task"
+                    onclick="openWeek(
+                        1,
+                        'Java Fundamentals',
+                        'Introduction to Java, basic programs, input-output, data types and operators.',
+                        'tasks/week-1.pdf'
+                    )">
+                    VIEW TASK →
+                </button>
+
+            </article>
+
+
+            <!-- WEEK 02 -->
+            <article class="card">
+
+                <div class="week">WEEK</div>
+
+                <div class="num">02</div>
+
+                <h3>Control Statements</h3>
+
+                <p>
+                    Decision making, loops and
+                    fundamental control-flow programs.
+                </p>
+
+                <button
+                    class="task"
+                    onclick="openWeek(
+                        2,
+                        'Control Statements',
+                        'Decision making, loops and fundamental control-flow programs.',
+                        'tasks/week-2.pdf'
+                    )">
+                    VIEW TASK →
+                </button>
+
+            </article>
+
+
+            <!-- WEEK 03 -->
+            <article class="card">
+
+                <div class="week">WEEK</div>
+
+                <div class="num">03</div>
+
+                <h3>Arrays & Strings</h3>
+
+                <p>
+                    Array operations, string handling
+                    and utility programs.
+                </p>
+
+                <button
+                    class="task"
+                    onclick="openWeek(
+                        3,
+                        'Arrays & Strings',
+                        'Array operations, string handling and utility programs.',
+                        'tasks/week-3.pdf'
+                    )">
+                    VIEW TASK →
+                </button>
+
+            </article>
+
+
+            <!-- WEEK 04 -->
+            <article class="card">
+
+                <div class="week">WEEK</div>
+
+                <div class="num">04</div>
+
+                <h3>Methods</h3>
+
+                <p>
+                    Creating and using methods,
+                    parameters and return values.
+                </p>
+
+                <button
+                    class="task"
+                    onclick="openWeek(
+                        4,
+                        'Methods',
+                        'Creating and using methods, parameters and return values.',
+                        'tasks/week-4.pdf'
+                    )">
+                    VIEW TASK →
+                </button>
+
+            </article>
+
+
+            <!-- WEEK 05 -->
+            <article class="card">
+
+                <div class="week">WEEK</div>
+
+                <div class="num">05</div>
+
+                <h3>OOP Concepts</h3>
+
+                <p>
+                    Classes, objects, constructors
+                    and object-oriented principles.
+                </p>
+
+                <button
+                    class="task"
+                    onclick="openWeek(
+                        5,
+                        'OOP Concepts',
+                        'Classes, objects, constructors and object-oriented principles.',
+                        'tasks/week-5.pdf'
+                    )">
+                    VIEW TASK →
+                </button>
+
+            </article>
+
+<!-- WEEK 06 -->
+<article class="card">
+    <div class="week">WEEK</div>
+    <div class="num">06</div>
+    <h3>Week 06 Task</h3>
+    <p>Java laboratory practical work for Week 06.</p>
+    <button class="task" onclick="openWeek(6,'Week 06 Task','Java laboratory practical work for Week 06.','tasks/week-6.pdf')">
+        VIEW TASK →
+    </button>
+</article>
+
+<!-- WEEK 07 -->
+<article class="card">
+    <div class="week">WEEK</div>
+    <div class="num">07</div>
+    <h3>Week 07 Task</h3>
+    <p>Java laboratory practical work for Week 07.</p>
+    <button class="task" onclick="openWeek(7,'Week 07 Task','Java laboratory practical work for Week 07.','tasks/week-7.pdf')">
+        VIEW TASK →
+    </button>
+</article>
+
+<!-- WEEK 08 -->
+<article class="card">
+    <div class="week">WEEK</div>
+    <div class="num">08</div>
+    <h3>Week 08 Task</h3>
+    <p>Java laboratory practical work for Week 08.</p>
+    <button class="task" onclick="openWeek(8,'Week 08 Task','Java laboratory practical work for Week 08.','tasks/week-8.pdf')">
+        VIEW TASK →
+    </button>
+</article>
+
+<!-- WEEK 09 -->
+<article class="card">
+    <div class="week">WEEK</div>
+    <div class="num">09</div>
+    <h3>Week 09 Task</h3>
+    <p>Java laboratory practical work for Week 09.</p>
+    <button class="task" onclick="openWeek(9,'Week 09 Task','Java laboratory practical work for Week 09.','tasks/week-9.pdf')">
+        VIEW TASK →
+    </button>
+</article>
+
+<!-- WEEK 10 -->
+<article class="card">
+    <div class="week">WEEK</div>
+    <div class="num">10</div>
+    <h3>Week 10 Task</h3>
+    <p>Java laboratory practical work for Week 10.</p>
+    <button class="task" onclick="openWeek(10,'Week 10 Task','Java laboratory practical work for Week 10.','tasks/week-10.pdf')">
+        VIEW TASK →
+    </button>
+</article>
+
+<!-- WEEK 11 -->
+<article class="card">
+    <div class="week">WEEK</div>
+    <div class="num">11</div>
+    <h3>Week 11 Task</h3>
+    <p>Java laboratory practical work for Week 11.</p>
+    <button class="task" onclick="openWeek(11,'Week 11 Task','Java laboratory practical work for Week 11.','tasks/week-11.pdf')">
+        VIEW TASK →
+    </button>
+</article>
+
+<!-- WEEK 12 -->
+<article class="card">
+    <div class="week">WEEK</div>
+    <div class="num">12</div>
+    <h3>Week 12 Task</h3>
+    <p>Java laboratory practical work for Week 12.</p>
+    <button class="task" onclick="openWeek(12,'Week 12 Task','Java laboratory practical work for Week 12.','tasks/week-12.pdf')">
+        VIEW TASK →
+    </button>
+</article>
+
+<!-- WEEK 13 -->
+<article class="card">
+    <div class="week">WEEK</div>
+    <div class="num">13</div>
+    <h3>Week 13 Task</h3>
+    <p>Java laboratory practical work for Week 13.</p>
+    <button class="task" onclick="openWeek(13,'Week 13 Task','Java laboratory practical work for Week 13.','tasks/week-13.pdf')">
+        VIEW TASK →
+    </button>
+</article>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- WEEK DETAIL / DOCUMENT VIEWER -->
+    <section id="week-detail">
+
+        <div class="detail-top">
+
+            <small id="detail-week">
+                WEEK 01
+            </small>
+
+            <button
+                class="close"
+                onclick="closeWeek()">
+                ×
+            </button>
+
+        </div>
+
+
+        <div class="detail">
+
+            <h2 id="detail-title">
+                Java Fundamentals
+            </h2>
+
+            <p id="detail-description">
+                Introduction to Java, basic programs,
+                input-output, data types and operators.
+            </p>
+
+
+            <!-- ACTUAL PDF IS DISPLAYED HERE -->
+            <div class="document-viewer">
+
+                <iframe
+                    id="document-frame"
+                    src=""
+                    title="Java Lab Task Document">
+                </iframe>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        MOHAMMAD TANVEER
+        &nbsp; | &nbsp;
+        JAVA LAB PORTFOLIO © 2026
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
